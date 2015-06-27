@@ -29,6 +29,18 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'LoginCtrl'
+      })
+      .when('/signup', {
+        templateUrl: 'views/signup.html',
+        controller: 'SignupCtrl'
+      })
+      .when('/forgotpass', {
+        templateUrl: 'views/forgotpass.html',
+        controller: 'ForgotpassCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
